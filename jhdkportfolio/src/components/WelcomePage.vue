@@ -24,7 +24,7 @@ import CameraIcon from './icons/IconCamera.vue'
     </template>
     <template #heading>Technologies</template>
 
-   I was part of a 6 month Cohort through UC Berkely Extenstion program. We focused on MERN Stack development with Javascript basis. I have since started learning other JS based frameworks, such as <a href="https://nextjs.org/" target="_blank" rel="noopener">Next.js</a>, and Vite/Vue. I am studying <a href="https://www.python.org/" target="_blank" rel="noopener">Python</a>, and intend to learn Java/C languages and learn more software development aswell. Visit the Technologies page to see what else I've learned! 
+   I was part of a 6 month Cohort through UC Berkely Extenstion program. We focused on MERN Stack development with Javascript basis. I have since started learning other JS based frameworks, such as <a href="https://nextjs.org/" target="_blank" rel="noopener">Next.js</a>, and Vite/Vue. I am studying <a href="https://www.python.org/" target="_blank" rel="noopener">Python</a>, and intend to learn Java/C languages and learn more software development aswell. Visit the Technologies tab to see what else I've learned! 
   </WelcomeItem>
 
   <WelcomeItem>
@@ -40,12 +40,21 @@ import CameraIcon from './icons/IconCamera.vue'
     <template #icon>
       <CommunityIcon />
     </template>
-    <template #heading>Community Links</template>
+    <template #heading>Contact Me</template>
 
     
     <a href="https://github.com/jhdk707" target="_blank" rel="noopener">Github</a>
     <br>
     <a href="https://www.linkedin.com/in/jesse-h-085117272/" target="_blank" rel="noopener">LinkedIn</a>
+    <br>
+    <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="mailto:jessehudak707@outlook.com"
+          className="btn btn-light col-3"
+        >
+          Email Me
+        </a>
   </WelcomeItem>
 
   <WelcomeItem>
@@ -55,6 +64,6 @@ import CameraIcon from './icons/IconCamera.vue'
     <template #heading>Photography</template>
 
     In my sparetime, I also really like taking photos of food and life. You can view them 
-    <a href="https://vuejs.org/sponsor/" target="_blank" rel="noopener">here</a>.
+    on the Photography tab.
   </WelcomeItem>
 </template>

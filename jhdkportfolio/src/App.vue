@@ -12,11 +12,12 @@ import MainPage from './components/MainPage.vue'
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/about">About Me</RouterLink>
         <RouterLink to="/projects">Projects</RouterLink>
         <RouterLink to="/rescerts">Resume & Certs</RouterLink>
-        <RouterLink to="/contact">Contact Me</RouterLink>
         <RouterLink to="/tech">Technologies</RouterLink>
+        <RouterLink to="/photos">Photography</RouterLink>
+        
       </nav>
     </div>
   </header>
@@ -33,8 +34,9 @@ header {
 .portrait {
   display: block;
   margin: 5 auto 2rem;
-  border-style: groove;
+  border-style: solid;
   border-color: antiquewhite;
+  justify-self: center;
 }
 
 nav {
@@ -71,6 +73,7 @@ nav a:first-of-type {
 
   .portrait {
     margin: 0 2rem 0 0;
+    
   }
 
   header .wrapper {

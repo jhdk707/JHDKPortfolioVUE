@@ -23,9 +23,9 @@ const router = createRouter({
       component: () => import('../views/ResCerts.vue')
     },
     {
-      path: '/contact',
-      name: 'contact',
-      component: () => import('../views/ContactPage.vue')
+      path: '/photos',
+      name: 'photos',
+      component: () => import('../views/PhotosPage.vue')
     },
     {
       path: '/tech',

@@ -22,7 +22,8 @@
 export default {
   methods: {
     downloadResume() {
-      window.open('./Resume.pdf', '_blank');
+      const resumePath = import.meta.env.BASE_URL + 'src/assets/Resume.pdf';
+      window.open(resumePath, '_blank');
     },
   },
 };
