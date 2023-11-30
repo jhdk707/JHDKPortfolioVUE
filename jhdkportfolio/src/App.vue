@@ -5,7 +5,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="portrait" src="@/assets/portrait.jpg" width="200" height="200" />
+    <img alt="Jesse Portrait" class="portrait" src="@/assets/portrait.jpg" width="200" height="200" />
 
     <div class="wrapper">
       <HelloWorld msg="Jesse Hudak Portfolio" />
@@ -15,6 +15,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/projects">Projects</RouterLink>
         <RouterLink to="/rescerts">Resume & Certs</RouterLink>
+        <RouterLink to="/contact">Contact</RouterLink>
       </nav>
     </div>
   </header>
@@ -31,6 +32,8 @@ header {
 .portrait {
   display: block;
   margin: 5 auto 2rem;
+  border-style: groove;
+  border-color: antiquewhite;
 }
 
 nav {
