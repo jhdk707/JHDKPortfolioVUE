@@ -27,6 +27,7 @@ import NationalParksimg from '@/assets/NTLPRKSSCREENCAP.png';
 import NoteTakerimg from '@/assets/Notetaker5000sc.png';
 import NeedleJunkeezimg from '@/assets/needlejunkeez.png';
 import WorkdaySchimg from '@/assets/workdayscheduler.png';
+import WeatherDashimg from '@/assets/weatherapp.png';
 
 export default {
   data() {
@@ -45,7 +46,7 @@ export default {
           id: 2,
           title: 'Note Taker App',
           image: NoteTakerimg,
-          description: 'A group project which included full-stack dev, client side, middleware, and back end. It was a lot of fun although we were met with some pretty big battles.',
+          description: 'A basic app that takes and stores notes. Planning to convert this into a PWA in the future',
           deployedLink: 'https://notetaker5000.herokuapp.com/',
           githubLink: 'https://github.com/jhdk707/NoteTaker5000',
         },
@@ -53,17 +54,25 @@ export default {
           id: 3,
           title: 'Groovana Project',
           image: NeedleJunkeezimg,
-          description: 'A group project which included full-stack dev, client side, middleware, and back end. It was a lot of fun although we were met with some pretty big battles.',
+          description: 'Originated as a final project in my Berkely Cohort, my team and I are continuing to develop this into a working Social Media Platform',
           deployedLink: 'https://needlejunkies.herokuapp.com/',
           githubLink: 'https://github.com/jhdk707/NeedleJunkies',
         },
         {
-          id: 3,
+          id: 4,
           title: 'Workday Scheduler',
           image: WorkdaySchimg,
-          description: 'A group project which included full-stack dev, client side, middleware, and back end. It was a lot of fun although we were met with some pretty big battles.',
+          description: 'A basic workday scheduler that you can use to stay on task. It will alert via change of colors if you are ahead/ behind schedule.',
           deployedLink: 'https://jhdk707.github.io/WorkDayScheduler/',
           githubLink: 'https://github.com/jhdk707/WorkDayScheduler',
+        },
+        {
+          id: 5,
+          title: 'Weather Dashboard',
+          image: WeatherDashimg,
+          description: 'A basic workday scheduler that you can use to stay on task. It will alert via change of colors if you are ahead/ behind schedule.',
+          deployedLink: 'https://jhdk707.github.io/WeatherApp/',
+          githubLink: 'https://github.com/jhdk707/WeatherApp',
         },
       ],
     };
@@ -88,7 +97,6 @@ export default {
   }
   
 }
-
 
 </style>
 
