@@ -5,9 +5,17 @@
           Technologies
         </h2>
        
-        <p>
-          Insert tech here
-        </p>
+        <h3>Areas of Knowledge</h3>
+    <ul>
+      <li>HTML</li>
+      <li>CSS & Frameworks (Bulma, Bootstrap) </li>
+      <li>API & MySql, Insomnia</li>
+      <li>MERN (MongoDB, Express, React, Node)</li>
+      <li>JavaScript</li>
+      <li>Vue.js/ Vite</li>
+      <li>Next.js</li>
+      <li>Python</li>
+    </ul>
         <p></p>
       </div>
     </div>

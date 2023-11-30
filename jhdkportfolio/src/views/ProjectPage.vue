@@ -11,8 +11,8 @@
           <div class="card-body">
             <p class="card-text">{{ project.description }}</p>
             <div class="btn-group">
-              <a :href="project.deployedLink" target="_blank" rel="noopener noreferrer" class="btn">Deployed Project</a>
-              <a :href="project.githubLink" target="_blank" rel="noopener noreferrer" class="btn">Github Repo</a>
+              <button @click="openLink(project.deployedLink)" class="btn">Deployed Project</button>
+              <button @click="openLink(project.githubLink)" class="btn">Github Repo</button>
             </div>
           </div>
         </div>
@@ -88,9 +88,13 @@ export default {
       ],
     };
   },
+  methods: {
+    openLink(link) {
+      window.open(link, '_blank').focus();
+    },
+  },
 };
 </script>
-
 <style>
 
 
@@ -121,15 +125,14 @@ export default {
   font-size: large;
 }
 
-.btn {
+/* .btn {
   background-color: black;
   padding-right: 1em;
   border: .05em;
   border-style: solid;
-}
-/* .btn-a {
-  justify-content: center;
 } */
+
+
 
 @media (min-width: 1024px) {
   .about {

@@ -14,7 +14,10 @@
         listen to birds, go for long drives, swim in the ocean or watch the
         skies at night.
       </p>
-      <p></p>
+      <br>
+      <br>
+      <h4>
+      <p>Copyright 2023 @ Jesse Hudak | Made with Vue.js/Vite/TailwindCSS and VSCode</p></h4>
     </div>
   </div>
 </template>

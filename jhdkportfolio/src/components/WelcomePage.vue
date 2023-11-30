@@ -51,7 +51,7 @@ import CameraIcon from './icons/IconCamera.vue'
           target="_blank"
           rel="noopener noreferrer"
           href="mailto:jessehudak707@outlook.com"
-          className="btn btn-light col-3"
+          className="email"
         >
           Email Me
         </a>
@@ -67,3 +67,14 @@ import CameraIcon from './icons/IconCamera.vue'
     on the Photography tab.
   </WelcomeItem>
 </template>
+
+<style>
+
+@media (min-width: 1024px) {
+  .about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+}
+</style>
