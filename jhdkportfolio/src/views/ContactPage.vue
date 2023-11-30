@@ -51,7 +51,7 @@
               placeholder="Enter a message!"
             />
           </div>
-          <button type="submit" class="btn btn-dark btn-outline-light btn-sm col-2 btn-center mx-auto">Submit</button>
+          <button type="submit" class="submit-btn">Submit</button>
         </div>
       </form>
     </div>
@@ -89,6 +89,13 @@
   </script>
   
   <style scoped>
+  .submit-btn {
+  background-color: black;
+  padding-right: 1em;
+  border: .05em;
+  border-style: solid;
+  color: hsla(160, 100%, 37%, 1);
+}
   @media (min-width: 1024px) {
     .about {
       min-height: 100vh;

@@ -1,10 +1,41 @@
+<!-- RESUMES AND CERTIFICATIONS PAGE 11/29/2023-->
+
+
 <template>
-  <div class="rescerts">
-    <h1>This is an Resume and Certs page</h1>
+  <div class="container py-4">
+    <h2 class="h2 text-center" id="Resume">My Resume and Learned Technologies</h2>
+
+    <h3>Areas of Knowledge</h3>
+    <ul>
+      <li>HTML</li>
+      <li>CSS & Frameworks (Bulma, Bootstrap) </li>
+      <li>API & MySql, Insomnia</li>
+      <li>MERN (MongoDB, Express, React, Node)</li>
+      <li>JavaScript & React JS</li>
+    </ul>
+
+    <button class="download-btn" @click="downloadResume">Download Resume</button>
   </div>
 </template>
 
+<script>
+export default {
+  methods: {
+    downloadResume() {
+      window.open('./Resume.pdf', '_blank');
+    },
+  },
+};
+</script>
+
 <style>
+.download-btn {
+  background-color: black;
+  padding-right: 1em;
+  border: .05em;
+  border-style: solid;
+  color: hsla(160, 100%, 37%, 1);
+}
 @media (min-width: 1024px) {
   .about {
     min-height: 100vh;

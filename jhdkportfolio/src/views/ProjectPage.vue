@@ -1,16 +1,18 @@
+<!-- PROJECTS PAGE 11/29/2023 -->
+
 <template>
   <div class="project-container">
     <h2 class="h2 text-center" id="Portfolio">Projects</h2>
     <div class="projectsscrollcontainer">
       <div v-for="project in projects" :key="project.id" class="row">
-        <div class="card col-11">
+        <div class="card">
           <h5 class="card-title text-center">{{ project.title }}</h5>
           <img class="card-img-top" :src="project.image" alt="screenshot of webpage" />
           <div class="card-body">
             <p class="card-text">{{ project.description }}</p>
-            <div class="btn-group mx-auto justify-content-center">
-              <a :href="project.deployedLink" target="_blank" rel="noopener noreferrer" class="btn btn-light">Deployed Project</a>
-              <a :href="project.githubLink" target="_blank" rel="noopener noreferrer" class="btn btn-dark">Github Repo</a>
+            <div class="btn-group">
+              <a :href="project.deployedLink" target="_blank" rel="noopener noreferrer" class="btn">Deployed Project</a>
+              <a :href="project.githubLink" target="_blank" rel="noopener noreferrer" class="btn">Github Repo</a>
             </div>
           </div>
         </div>
@@ -22,12 +24,13 @@
 
 
 <script>
-//IMAGE IMPORTS FOR PROJECT CARDS 
+//IMAGE IMPORTS FOR PROJECT CARDS - 11/29/2023
 import NationalParksimg from '@/assets/NTLPRKSSCREENCAP.png';
 import NoteTakerimg from '@/assets/Notetaker5000sc.png';
 import NeedleJunkeezimg from '@/assets/needlejunkeez.png';
 import WorkdaySchimg from '@/assets/workdayscheduler.png';
 import WeatherDashimg from '@/assets/weatherapp.png';
+import PasswordGenimg from '@/assets/passwrdgensc.png';
 
 export default {
   data() {
@@ -74,6 +77,14 @@ export default {
           deployedLink: 'https://jhdk707.github.io/WeatherApp/',
           githubLink: 'https://github.com/jhdk707/WeatherApp',
         },
+        {
+          id: 6,
+          title: 'Secure Password Generator',
+          image: PasswordGenimg,
+          description: 'A customizable Password Generator. Allows you to chose between 8-128 char, and decide on what type of characters you need.',
+          deployedLink: 'https://jhdk707.github.io/Password-Generator-Assignment/',
+          githubLink: 'https://github.com/jhdk707/Password-Generator-Assignment',
+        },
       ],
     };
   },
@@ -81,6 +92,21 @@ export default {
 </script>
 
 <style>
+
+
+.project-container {
+ color: white;
+}
+
+.project-container ::-webkit-scrollbar {
+ display: none;
+ overflow-y: scroll;
+}
+
+.card {
+  padding-bottom: 2em;
+}
+
 .card-img-top {
   display: block;
   margin: 5 auto 2rem;
@@ -89,6 +115,22 @@ export default {
   width: 500px;
   height: auto;
 }
+
+.card-title.text-center {
+  color: aliceblue;
+  font-size: large;
+}
+
+.btn {
+  background-color: black;
+  padding-right: 1em;
+  border: .05em;
+  border-style: solid;
+}
+/* .btn-a {
+  justify-content: center;
+} */
+
 @media (min-width: 1024px) {
   .about {
     min-height: 100vh;
