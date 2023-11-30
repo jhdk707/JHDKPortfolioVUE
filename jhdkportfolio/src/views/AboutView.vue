@@ -1,9 +1,10 @@
 <template>
   <div class="about">
-    <div className="container">
+    <div className="container py-4">
       <h2 className="h2 text-center" id="About-Me">
         About Me
       </h2>
+     
       <p>
         I am an avid learner, working into the world of tech. I have always
         enjoyed building and repairing computers, coding seems like a good
