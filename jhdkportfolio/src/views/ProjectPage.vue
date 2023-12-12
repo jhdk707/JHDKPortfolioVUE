@@ -1,27 +1,8 @@
 <!-- PROJECTS PAGE 11/29/2023 -->
 
-<template>
-  <div class="project-container">
-    <h2 class="h2 text-center" id="Portfolio">Projects</h2>
-    <div class="projectsscrollcontainer">
-      <div v-for="project in projects" :key="project.id" class="row">
-        <div class="card">
-          <h5 class="card-title text-center">{{ project.title }}</h5>
-          <img class="card-img-top" :src="project.image" alt="screenshot of webpage" />
-          <div class="card-body">
-            <p class="card-text">{{ project.description }}</p>
-            <div class="btn-group">
-              <button @click="openLink(project.deployedLink)" class="btn">Deployed Project</button>
-              <button @click="openLink(project.githubLink)" class="btn">Github Repo</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</template>
-
-
+<script setup>
+import { FwbButton } from 'flowbite-vue'
+</script>
 
 <script>
 //IMAGE IMPORTS FOR PROJECT CARDS - 11/29/2023
@@ -31,6 +12,8 @@ import NeedleJunkeezimg from '@/assets/needlejunkeez.png';
 import WorkdaySchimg from '@/assets/workdayscheduler.png';
 import WeatherDashimg from '@/assets/weatherapp.png';
 import PasswordGenimg from '@/assets/passwrdgensc.png';
+
+
 
 export default {
   data() {
@@ -95,9 +78,32 @@ export default {
   },
 };
 </script>
+
+<template>
+    <div class="project-container">
+    <h2 class="h2 text-center" id="Portfolio">Projects</h2>
+    <div class="projectsscrollcontainer">
+      <div v-for="project in projects" :key="project.id" class="row">
+        <div class="card">
+          <h5 class="card-title text-center">{{ project.title }}</h5>
+          <img class="card-img-top" :src="project.image" alt="screenshot of webpage" />
+          <div class="card-body">
+            <p class="card-text">{{ project.description }}</p>
+            <div class="inline-flex">
+              <fwb-button gradient="green-blue" outline>Green to blue</fwb-button>
+              <fwb-button @click="openLink(project.deployedLink)" gradient="purple-blue">Deployed Project</fwb-button>
+              <fwb-button @click="openLink(project.githubLink)" gradient="purple-blue">Github Repo</fwb-button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+
+
 <style>
-
-
 .project-container {
  color: white;
 }

@@ -9,6 +9,11 @@ export default defineConfig({
   plugins: [
     vue(),
     vueJsx(),
+    {
+      dotenv: {
+        ignoreLocal: true
+      }
+    }
   ],
   resolve: {
     alias: {

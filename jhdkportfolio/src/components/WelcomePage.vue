@@ -1,10 +1,27 @@
+<!-- WelcomePage.vue -->
+
 <script setup>
-import WelcomeItem from './WelcomeItem.vue'
-import WaveIcon from './icons/IconWave.vue'
-import TechIcon from './icons/IconTech.vue'
-import EcosystemIcon from './icons/IconEcosystem.vue'
-import CommunityIcon from './icons/IconCommunity.vue'
-import CameraIcon from './icons/IconCamera.vue'
+import WelcomeItem from './WelcomeItem.vue';
+import WaveIcon from './icons/IconWave.vue';
+import TechIcon from './icons/IconTech.vue';
+import EcosystemIcon from './icons/IconEcosystem.vue';
+import CommunityIcon from './icons/IconCommunity.vue';
+import CameraIcon from './icons/IconCamera.vue';
+import ContactModal from './ContactModal.vue';
+import { ref } from 'vue';
+
+// Define a ref to track the modal state
+const isContactModalOpen = ref(false);
+
+// Function to open the ContactModal
+const openContactModal = () => {
+  isContactModalOpen.value = true;
+};
+
+// Function to close the ContactModal
+const closeContactModal = () => {
+  isContactModalOpen.value = false;
+};
 </script>
 
 <template>
@@ -47,14 +64,14 @@ import CameraIcon from './icons/IconCamera.vue'
     <br>
     <a href="https://www.linkedin.com/in/jesse-h-085117272/" target="_blank" rel="noopener">LinkedIn</a>
     <br>
-    <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="mailto:jessehudak707@outlook.com"
-          className="email"
-        >
-          Email Me
-        </a>
+    <div>
+        <!-- Button to open the ContactModal -->
+        <button @click="openContactModal">Email Me</button>
+
+        <!-- Include the ContactModal component -->
+        <ContactModal :isOpen="isContactModalOpen" @close="closeContactModal" />
+    </div>
+
   </WelcomeItem>
 
   <WelcomeItem>

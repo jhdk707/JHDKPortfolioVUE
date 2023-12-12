@@ -1,29 +1,50 @@
-<script setup>
+<!-- <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import MainPage from './components/MainPage.vue'
+</script> -->
+
+<script setup>
+import MainPage from '@/components/MainPage.vue';
+// import CustomNavbar from '@/components/CustomNavbar.vue';
+import { RouterView } from 'vue-router'
 </script>
 
+
+ <template>
+   <header>
+     <img alt="Jesse Portrait" class="portrait" src="@/assets/JesseHeadshot.jpg"  />
+
+      <div class="wrapper">
+       <MainPage msg="Jesse Hudak" />
+           <Nav>
+             <RouterLink to="/">Home</RouterLink>
+             <RouterLink to="/about">About Me</RouterLink>
+             <RouterLink to="/projects">Projects</RouterLink>
+             <RouterLink to="/rescerts">Resume & Certs</RouterLink>
+             <RouterLink to="/tech">Technologies</RouterLink>
+             <RouterLink to="/photos">Photography</RouterLink>
+           </Nav>
+     </div>
+   </header>
+   <RouterView />
+</template> 
+
+
+<!-- App.vue
 <template>
-  <header>
-    <img alt="Jesse Portrait" class="portrait" src="@/assets/portrait.jpg" width="200" height="200" />
+  <div id="app">
+    <header>
+      <img alt="Jesse Portrait" class="portrait" src="@/assets/JesseHeadshot.jpg" />
+      <div class="wrapper">
+        <MainPage msg="Jesse Hudak" />
+        <CustomNavbar />
+      </div>
+    </header>
+    <RouterView />
+  </div>
+</template> -->
 
-    <div class="wrapper">
-      <MainPage msg="Jesse Hudak" />
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About Me</RouterLink>
-        <RouterLink to="/projects">Projects</RouterLink>
-        <RouterLink to="/rescerts">Resume & Certs</RouterLink>
-        <RouterLink to="/tech">Technologies</RouterLink>
-        <RouterLink to="/photos">Photography</RouterLink>
-        
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
-</template>
 
 <style scoped>
 header {
@@ -37,6 +58,8 @@ header {
   border-style: solid;
   border-color: antiquewhite;
   justify-self: center;
+  width: 20%;
+  height: auto;
 }
 
 nav {
