@@ -7,23 +7,28 @@ import MainPage from './components/MainPage.vue'
 import MainPage from '@/components/MainPage.vue';
 // import CustomNavbar from '@/components/CustomNavbar.vue';
 import { RouterView } from 'vue-router'
+import CustomNavbar from './components/CustomNavbar.vue';
 </script>
 
 
  <template>
    <header>
-     <img alt="Jesse Portrait" class="portrait" src="@/assets/JesseHeadshot.jpg"  />
+     
+  <img class="h-auto max-w-sm" src="@/assets/JesseHeadshot.jpg" alt="jesse headshot">
+
+
 
       <div class="wrapper">
-       <MainPage msg="Jesse Hudak" />
-           <Nav>
+       <MainPage  />
+       <CustomNavbar />
+           <!-- <Nav>
              <RouterLink to="/">Home</RouterLink>
              <RouterLink to="/about">About Me</RouterLink>
              <RouterLink to="/projects">Projects</RouterLink>
              <RouterLink to="/rescerts">Resume & Certs</RouterLink>
              <RouterLink to="/tech">Technologies</RouterLink>
              <RouterLink to="/photos">Photography</RouterLink>
-           </Nav>
+           </Nav> -->
      </div>
    </header>
    <RouterView />
@@ -96,6 +101,7 @@ nav a:first-of-type {
 
   .portrait {
     margin: 0 2rem 0 0;
+    size: 25;
     
   }
 

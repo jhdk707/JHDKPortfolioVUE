@@ -31,45 +31,112 @@
 
 
 <!-- CustomNavbar.vue -->
-<template>
-    <fwb-navbar>
-      <template #logo>
-        <fwb-navbar-logo alt="Your Logo" image-url="/images/your-logo.svg" link="#">
-          Your Logo Text
-        </fwb-navbar-logo>
-      </template>
+<!-- <template>
+          <Nav>
+             <RouterLink to="/">Home</RouterLink>
+             <RouterLink to="/about">About Me</RouterLink>
+             <RouterLink to="/projects">Projects</RouterLink>
+             <RouterLink to="/rescerts">Resume & Certs</RouterLink>
+             <RouterLink to="/tech">Technologies</RouterLink>
+             <RouterLink to="/photos">Photography</RouterLink>
+           </Nav>
+  </template>
+  
+  <script setup>
+
+  import { RouterLink } from 'vue-router';
+  </script>
+   -->
+
+   <!-- <template>
+    <fwb-navbar solid>
       <template #default="{ isShowMenu }">
         <fwb-navbar-collapse :is-show-menu="isShowMenu">
-          <RouterLink to="/" custom>
-            <fwb-navbar-link is-active-class="active">Home</fwb-navbar-link>
+          <RouterLink to="/" custom v-slot="{ navigate }">
+            <fwb-navbar-link :is-active="isActive('/')" @click="navigate">
+              Home
+            </fwb-navbar-link>
           </RouterLink>
-          <RouterLink to="/about" custom>
-            <fwb-navbar-link>About Me</fwb-navbar-link>
+          <RouterLink to="/about" custom v-slot="{ navigate }">
+            <fwb-navbar-link :is-active="isActive('/abouts')" @click="navigate">
+              About
+            </fwb-navbar-link>
           </RouterLink>
-          <RouterLink to="/projects" custom>
-            <fwb-navbar-link>Projects</fwb-navbar-link>
+          <RouterLink to="/projects" custom v-slot="{ navigate }">
+            <fwb-navbar-link :is-active="isActive('/projects')" @click="navigate">
+              Projects
+            </fwb-navbar-link>
           </RouterLink>
-          <RouterLink to="/rescerts" custom>
-            <fwb-navbar-link>Resume & Certs</fwb-navbar-link>
+          <RouterLink to="/rescerts" custom v-slot="{ navigate }">
+            <fwb-navbar-link :is-active="isActive('/rescerts')" @click="navigate">
+              Resume & Certificates
+            </fwb-navbar-link>
           </RouterLink>
-          <RouterLink to="/tech" custom>
-            <fwb-navbar-link>Technologies</fwb-navbar-link>
+          <RouterLink to="/tech" custom v-slot="{ navigate }">
+            <fwb-navbar-link :is-active="isActive('/tech')" @click="navigate">
+              Technologies
+            </fwb-navbar-link>
           </RouterLink>
-          <RouterLink to="/photos" custom>
-            <fwb-navbar-link>Photography</fwb-navbar-link>
+          <RouterLink to="/photos" custom v-slot="{ navigate }">
+            <fwb-navbar-link :is-active="isActive('/photos')" @click="navigate">
+              Photography
+            </fwb-navbar-link>
+          </RouterLink>
+        </fwb-navbar-collapse>
+      </template>
+    </fwb-navbar>
+  </template> -->
+  
+  <template>
+    
+    <fwb-navbar solid>
+      <template #default="{ isShowMenu }">
+        <fwb-navbar-collapse :is-show-menu="isShowMenu">
+          <RouterLink to="/" custom v-slot="{ navigate }">
+            <fwb-navbar-link :is-active="isActive('/')" @click="navigate">
+              Home
+            </fwb-navbar-link>
+          </RouterLink>
+          <RouterLink to="/about" custom v-slot="{ navigate }">
+            <fwb-navbar-link :is-active="isActive('/abouts')" @click="navigate">
+              About
+            </fwb-navbar-link>
+          </RouterLink>
+          <RouterLink to="/projects" custom v-slot="{ navigate }">
+            <fwb-navbar-link :is-active="isActive('/projects')" @click="navigate">
+              Projects
+            </fwb-navbar-link>
+          </RouterLink>
+          <RouterLink to="/rescerts" custom v-slot="{ navigate }">
+            <fwb-navbar-link :is-active="isActive('/rescerts')" @click="navigate">
+              Resume & Certificates
+            </fwb-navbar-link>
+          </RouterLink>
+          <RouterLink to="/tech" custom v-slot="{ navigate }">
+            <fwb-navbar-link :is-active="isActive('/tech')" @click="navigate">
+              Technologies
+            </fwb-navbar-link>
+          </RouterLink>
+          <RouterLink to="/photos" custom v-slot="{ navigate }">
+            <fwb-navbar-link :is-active="isActive('/photos')" @click="navigate">
+              Photography
+            </fwb-navbar-link>
           </RouterLink>
         </fwb-navbar-collapse>
       </template>
     </fwb-navbar>
   </template>
-  
+
   <script setup>
+  import { RouterLink } from 'vue-router';
   import {
     FwbNavbar,
     FwbNavbarCollapse,
     FwbNavbarLink,
-    FwbNavbarLogo,
   } from 'flowbite-vue';
-  import { RouterLink } from 'vue-router';
+  
+  const isActive = (route) => {
+    return window.location.pathname === route;
+  };
   </script>
   

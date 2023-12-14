@@ -63,7 +63,7 @@ export default {
   background: none;
   border: none;
   font-size: 18px;
-  color: #333;
+  color: white;
 }
 
 .close-button {
