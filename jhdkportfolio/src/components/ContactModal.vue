@@ -29,7 +29,7 @@ export default {
     },
   },
   components: {
-    ContactMeForm, // Make sure to include the component here
+    ContactMeForm, 
   },
 };
 </script>

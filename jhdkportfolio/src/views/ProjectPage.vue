@@ -109,16 +109,16 @@ export default {
 </template>
 
 
-
-
-<style>
+<style scoped>
 .project-container {
- color: white;
+  color: white;
+  max-height: 1000px; 
+  overflow-y: auto; /* Enable vertical scrolling */
+  scrollbar-width: thin; /* For Firefox */
 }
 
-.project-container ::-webkit-scrollbar {
- display: none;
- overflow-y: scroll;
+.project-container::-webkit-scrollbar {
+  display: none;
 }
 
 .card {
@@ -139,24 +139,14 @@ export default {
   font-size: large;
 }
 
-/* .btn {
-  background-color: black;
-  padding-right: 1em;
-  border: .05em;
-  border-style: solid;
-} */
-
-
-
 @media (min-width: 1024px) {
   .about {
     min-height: 100vh;
     display: flex;
     align-items: center;
   }
-  
 }
-
 </style>
+
 
 

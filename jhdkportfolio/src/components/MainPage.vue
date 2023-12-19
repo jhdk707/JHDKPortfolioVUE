@@ -9,13 +9,7 @@ defineProps({
 
 <template>
   <div class="greetings">
-    <!-- <h1 class="green">{{ msg }}</h1>
-    <h3>
-      Welcome to my Portfolio
-    </h3> -->
-
-<h1 class="text-5xl font-extrabold dark:text-white">Jesse Hudak<small class="ms-2 font-semibold text-gray-500 dark:text-gray-400">This is my portfolio.</small></h1>
-
+  <h1 class="text-5xl font-extrabold dark:text-white">Jesse Hudak<small class="ms-2 font-semibold text-gray-500 dark:text-gray-400">Full Stack Web Developer</small></h1>
   </div>
 </template>
 
