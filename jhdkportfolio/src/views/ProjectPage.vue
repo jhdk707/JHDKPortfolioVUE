@@ -112,7 +112,7 @@ export default {
 <style scoped>
 .project-container {
   color: white;
-  max-height: 1000px; 
+  max-height: 800px; 
   overflow-y: auto; /* Enable vertical scrolling */
   scrollbar-width: thin; /* For Firefox */
 }

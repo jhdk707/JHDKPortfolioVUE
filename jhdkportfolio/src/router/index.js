@@ -18,11 +18,6 @@ const router = createRouter({
       component: () => import('../views/ProjectPage.vue')
     },
     {
-      path: '/rescerts',
-      name: 'rescerts',
-      component: () => import('../views/ResCerts.vue')
-    },
-    {
       path: '/photos',
       name: 'photos',
       component: () => import('../views/PhotosPage.vue')

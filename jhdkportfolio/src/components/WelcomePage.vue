@@ -9,7 +9,6 @@ import CommunityIcon from './icons/IconCommunity.vue';
 import CameraIcon from './icons/IconCamera.vue';
 import ContactModal from './ContactModal.vue';
 import { FwbButton } from 'flowbite-vue'
-
 import { ref } from 'vue';
 
 // Define a ref to track the modal state
