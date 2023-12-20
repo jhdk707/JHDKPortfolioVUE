@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <div class="container py-4 text-center">
+    <div class="container py-4 text-left">
       <h2 class="h2" id="About-Me">
         About Me
       </h2>
@@ -10,10 +10,18 @@
         enjoyed building and repairing computers; coding seems like a good
         logical step to use as a creative outlet. I also highly enjoy problem
         solving, so coding is a fun, yet frustrating way to get more of that into
-        my day. For fun, I love to cook, read, play instruments, listen to music,
-        listen to birds, go for long drives, swim in the ocean, or watch the
-        skies at night.
+        my day.
       </p>
+      <div class="container py-4 text-left">
+      <ul style="list-style-type:circle;">
+        <h3>Random hobbies and interests / Fun</h3>
+        <li>Beach trips and tidepooling</li>
+        <li>Body Surfing </li>
+        <li>Succulents </li>
+        <li>Fungus </li>
+        <li>Spending hours on Google Maps looking at eveything </li>
+      </ul>
+      </div>
       <br>
       <br>
       <h4>
@@ -26,6 +34,24 @@
 
 
 <style>
+p{
+  margin-top: 1em;
+  font-size: medium;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+ul{
+  align-items: left;
+}
+
+h3{
+ font-size: medium;
+ font-weight: 700;
+ color: rgb(227, 160, 8);
+ margin-left: -1em;
+}
+
 @media (min-width: 1024px) {
   .about {
     min-height: 100vh;

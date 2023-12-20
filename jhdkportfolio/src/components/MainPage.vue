@@ -17,16 +17,18 @@ defineProps({
 <style scoped>
 h1 {
   font-size: 2.6rem;
-  position: relative;
+  position: center;
   top: -10px;
   color: hsla(160, 100%, 37%, 1);
   text-shadow: 2px 3px 3px rgb(30, 30, 30);
+  padding-left: 1.50em;
 }
 
 h2 {
   font-size: 1.6rem;
   position: relative;
   text-shadow: 2px 3px 3px rgb(30, 30, 30);
+  padding-left: 2.45em;
 }
 
 .greetings h1,

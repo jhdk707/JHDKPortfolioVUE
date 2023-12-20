@@ -6,7 +6,7 @@ import WaveIcon from './icons/IconWave.vue';
 import TechIcon from './icons/IconTech.vue';
 import EcosystemIcon from './icons/IconEcosystem.vue';  
 import CommunityIcon from './icons/IconCommunity.vue';
-import CameraIcon from './icons/IconCamera.vue';
+// import CameraIcon from './icons/IconCamera.vue'; for use with Photos page
 import ContactModal from './ContactModal.vue';
 import { FwbButton } from 'flowbite-vue'
 import { ref } from 'vue';
@@ -84,7 +84,7 @@ const closeContactModal = () => {
     
   </WelcomeItem> 
 
-  <WelcomeItem>
+  <!-- <WelcomeItem>
     <template #icon>
       <CameraIcon />
     </template>
@@ -92,7 +92,8 @@ const closeContactModal = () => {
 
     In my sparetime, I also really like taking photos of food and life. You can view them 
     on the Photography tab.
-  </WelcomeItem>
+  </WelcomeItem> -->
+
     <!-- PLACEHOLDER TEMPLATE FOR ADDITIONAL CONTENT -->
   <!-- <WelcomeItem>
     <template #icon>

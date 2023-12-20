@@ -81,7 +81,6 @@ export default {
 
 <template>
   <div class="project-container">
-    <h2 class="h2 text-center" id="Portfolio">Projects</h2>
     <div class="projectsscrollcontainer">
       <div v-for="project in projects" :key="project.id" class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 mx-auto mb-8">
         <a :href="project.deployedLink">
@@ -111,6 +110,7 @@ export default {
 
 <style scoped>
 .project-container {
+  margin-top: 1em;
   color: white;
   max-height: 800px; 
   overflow-y: auto; /* Enable vertical scrolling */
