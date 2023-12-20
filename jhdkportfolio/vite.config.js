@@ -1,3 +1,5 @@
+// vite.config.js
+
 import { fileURLToPath, URL } from 'node:url'
 
 import { defineConfig } from 'vite'
@@ -9,10 +11,16 @@ export default defineConfig({
   plugins: [
     vue(),
     vueJsx(),
+    {
+      dotenv: {
+        ignoreLocal: true
+      }
+    }
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      flowbite: 'flowbite' // Adjust the alias to point directly to Flowbite
     }
   }
 })

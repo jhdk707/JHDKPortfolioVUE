@@ -1,67 +1,28 @@
+
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import MainPage from './components/MainPage.vue'
+import { RouterView } from 'vue-router'
+import MainPage from '@/components/MainPage.vue';
+import CustomNavbar from './components/CustomNavbar.vue';
 </script>
 
-<template>
-  <header>
-    <img alt="Jesse Portrait" class="portrait" src="@/assets/portrait.jpg" width="200" height="200" />
 
-    <div class="wrapper">
-      <MainPage msg="Jesse Hudak" />
+ <template>
+   <header>
+      <div class="wrapper">
+        <MainPage  />
+        <CustomNavbar />
+       <!-- Insert header components here, ROUTER LINKS are in /components/CustomNavBar.vue -->
+     </div>
+    </header>
+   <RouterView />
+</template> 
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About Me</RouterLink>
-        <RouterLink to="/projects">Projects</RouterLink>
-        <RouterLink to="/rescerts">Resume & Certs</RouterLink>
-        <RouterLink to="/tech">Technologies</RouterLink>
-        <RouterLink to="/photos">Photography</RouterLink>
-        
-      </nav>
-    </div>
-  </header>
 
-  <RouterView />
-</template>
 
 <style scoped>
 header {
   line-height: 1.5;
   max-height: 100vh;
-}
-
-.portrait {
-  display: block;
-  margin: 5 auto 2rem;
-  border-style: solid;
-  border-color: antiquewhite;
-  justify-self: center;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
 }
 
 @media (min-width: 1024px) {
@@ -71,11 +32,6 @@ nav a:first-of-type {
     padding-right: calc(var(--section-gap) / 2);
   }
 
-  .portrait {
-    margin: 0 2rem 0 0;
-    
-  }
-
   header .wrapper {
     display: flex;
     place-items: flex-start;
@@ -83,12 +39,11 @@ nav a:first-of-type {
   }
 
   nav {
-    text-align: left;
-    margin-left: -1rem;
+    text-align: center;
     font-size: 1rem;
-
-    padding: 1rem 0;
+    padding: 1rem;
     margin-top: 1rem;
+    margin-right: 1rem;
   }
 }
 </style>
