@@ -38,8 +38,9 @@ nav {
   color: #00a86b;
   text-shadow: 1px 1px 3px black;
   background: radial-gradient(farthest-corner at 50px 37px, #353535 10%, #272727 25%, #181818 75% );
-  border-radius: 90px;
-  border-left: solid #353535;
+  border-radius: 80px;
+  border-left: solid rgb(227, 160, 8);
+  border-bottom: solid rgb(227, 160, 8);
   margin-top: 2em;
   width: 100%;
 }  
@@ -50,15 +51,23 @@ a.router-link-exact-active {
 
 a {
   padding: .50em;
-
 }
 a.router-link-exact-active:hover {
   background-color: transparent;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 540px) {
+  nav {
+    width: 100%;
+  }
+}
+
+@media (max-width: 300px) {
+  nav {
+    max-width: 250px;
+  }
   a {
-  padding: .25em;
+  padding: .10em;
   }
 }
 
