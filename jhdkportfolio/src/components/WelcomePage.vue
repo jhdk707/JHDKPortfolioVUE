@@ -42,7 +42,7 @@ const closeContactModal = () => {
     </template>
     <template #heading>Technologies</template>
 
-   I was part of a 6 month Cohort through UC Berkeley Extenstion program. We focused on MERN Stack development with Javascript basis. I have since started learning other JS based frameworks, such as <a href="https://nextjs.org/" target="_blank" rel="noopener" class="green-link">Next.js</a>, and Vite/Vue. I am studying <a href="https://www.python.org/" target="_blank" rel="noopener" class="green-link">Python</a>, and intend to learn Java/C languages and learn more software development aswell. Visit the Technologies tab to see what else I've learned! 
+   I graduated from a 6 month Cohort through UC Berkeley Extenstion program in May of 2023. We focused on MERN Stack development with Javascript basis. I have since started learning other JS based frameworks, such as <a href="https://nextjs.org/" target="_blank" rel="noopener" class="green-link">Next.js</a>, and Vue/Vite. I am studying <a href="https://www.python.org/" target="_blank" rel="noopener" class="green-link">Python</a>, and intend to learn Java/C languages and learn more software development aswell. Visit the Technologies tab to see what else I've learned! 
   </WelcomeItem>
    
   <WelcomeItem>
