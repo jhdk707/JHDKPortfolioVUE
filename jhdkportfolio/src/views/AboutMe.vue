@@ -44,6 +44,10 @@ p{
   margin-bottom: 1em;
 }
 
+.br{
+  padding: 1em;
+}
+
 .portrait {
   height: auto;
   border: 2px solid #353535;
