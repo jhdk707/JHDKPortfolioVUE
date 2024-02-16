@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <div class="container py-4 text-left">
-        <img class="portrait" src="@/assets/HeadshotCasual12142023.png" alt="jesse headshot"> 
+        <fwb-carousel no-indicators :pictures="pictures" />
       <p>
         I am Jesse Hudak - A curious problem solver, rabbit hole spelunker, jack-of-all with a sharp wit and a penchant for conversation. 
         <br>
@@ -34,7 +34,21 @@
   </div>
 </template>
 
+<script setup>
+import { FwbCarousel } from 'flowbite-vue'
 
+const pictures = [
+  {src: 'src/assets/HeadshotCasual12142023.png', alt: 'Headshot'},
+  {src: 'src/assets/Carweek.jpg', alt: 'Jesse at Carshow'},
+  {src: 'src/assets/EscapeRoom.jpg', alt: 'Escape Room Team Photo'},
+  {src: 'src/assets/BeneciaFriends.jpg', alt: 'Downtown Benecia on birthday'},
+  {src: 'src/assets/BabyGoat.jpg', alt: 'Jesse with baby goat'},
+  {src: 'src/assets/OaklandMetro.jpg', alt: 'Jesse with Aaron from Giant Squid'},
+  {src: 'src/assets/OroBeach.jpg', alt: 'Oro Beach Portrait'},
+  {src: 'src/assets/PossoStage.jpg', alt: 'Posso Stage band with Grandfather'},
+  {src: 'src/assets/RuthGrange.jpg', alt: 'Rutherford battle of the bands'},
+]
+</script>
 
 <style>
 p{
@@ -42,6 +56,13 @@ p{
   font-size: medium;
   font-weight: 500;
   margin-bottom: 1em;
+}
+
+.fwb-carousel .fwb-carousel-item img {
+  max-width: 100%; /* Ensure images don't exceed the width of the carousel */
+  max-height: 100%; /* Ensure images don't exceed the height of the carousel */
+  display: block; /* Ensure images are displayed as blocks */
+  margin: 0 auto; /* Center align images within the carousel */
 }
 
 .br{
