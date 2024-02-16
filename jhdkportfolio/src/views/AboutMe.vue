@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <div class="container py-4 text-left">
+    <div class="container">
         <fwb-carousel no-indicators :pictures="pictures" />
       <p class="bio">
         I am Jesse Hudak - A curious problem solver, rabbit hole spelunker, jack-of-all with a sharp wit and a penchant for conversation. 
@@ -14,7 +14,7 @@
       </p>
       <div class="container py-4 text-left">
       <ul style="list-style-type:circle;">
-        <h3>Random hobbies and interests / Fun</h3>
+        <h3 class="hobbyheader">Random hobbies and interests / Fun</h3>
         <li>Beach trips and tidepooling</li>
         <li>Body Surfing</li>
         <li>Working Out/ Hiking, have lost 40lbs since last April!</li>
@@ -60,15 +60,12 @@ const pictures = [
   border-radius: 2%;
 }
 
+.container {
+    margin-top: 2em;
+  }
+
 .break {
   margin-bottom: 1em;
-}
-
-.fwb-carousel .fwb-carousel-item img {
-  max-width: 100%; /* Ensure images don't exceed the width of the carousel */
-  max-height: 100%; /* Ensure images don't exceed the height of the carousel */
-  display: block; /* Ensure images are displayed as blocks */
-  margin: 0 auto; /* Center align images within the carousel */
 }
 
 .br{
@@ -92,7 +89,7 @@ ul{
 }
 
 
-h3{
+.hobbyheader{
  font-size: medium;
  font-weight: 700;
  color: rgb(227, 160, 8);
@@ -105,7 +102,7 @@ h4{
   margin-top: 5em;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1200px) {
   .about {
     min-height: 100vh;
     display: flex;
@@ -114,7 +111,7 @@ h4{
 
 
   .container {
-    margin: auto;
+    margin-top: 2em;
   }
 }
 </style>
