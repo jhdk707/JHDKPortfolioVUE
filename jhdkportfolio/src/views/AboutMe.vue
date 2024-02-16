@@ -2,14 +2,14 @@
   <div class="about">
     <div class="container py-4 text-left">
         <fwb-carousel no-indicators :pictures="pictures" />
-      <p>
+      <p class="bio">
         I am Jesse Hudak - A curious problem solver, rabbit hole spelunker, jack-of-all with a sharp wit and a penchant for conversation. 
-        <br>
+        <br class="break">
         I am an avid learner, working into the world of tech. I have always
         enjoyed building and repairing computers, however that was not the career path I would have chosen for fulfilling work. I wanted something with a creative outlet, rewarding, fun, challenging and something that I could do anywhere.
-        <br>
+        <br class="break">
         After joining the cohort through U.C Berkeley, I started to feel like this was the right path to get me to where I am going, albeit an arduous path. 
-        <br>
+        <br class="break">
         I have taken on several personal projects and I am working with some team-mates that I stuck with after the cohort was over, to work and develop some projects together. I am constantly on the lookout for open-source projects that I can contribute to, and doing drills and challenges to get my skills up.
       </p>
       <div class="container py-4 text-left">
@@ -51,10 +51,16 @@ const pictures = [
 </script>
 
 <style>
-p{
-  margin-top: 1em;
+.bio{
+  margin-top: 2em;
   font-size: medium;
   font-weight: 500;
+  background: linear-gradient(125deg, rgba(16,16,16,1) 2%, rgba(23,23,23,1) 35%, rgba(24,24,24,1) 100%);
+  padding: 1em;
+  border-radius: 2%;
+}
+
+.break {
   margin-bottom: 1em;
 }
 
@@ -82,13 +88,17 @@ p{
 
 ul{
   align-items: left;
+  margin-left: 2em;
 }
+
 
 h3{
  font-size: medium;
  font-weight: 700;
  color: rgb(227, 160, 8);
- margin-left: -1em;
+ margin-left: -1.5em;
+ border-bottom: solid rgb(227, 160, 8);
+
 }
 
 h4{
