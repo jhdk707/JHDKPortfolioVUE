@@ -38,7 +38,7 @@ nav {
   color: #00a86b;
   text-shadow: 1px 1px 3px black;
   background: radial-gradient(farthest-corner at 50px 37px, #353535 10%, #272727 25%, #181818 75% );
-  border-radius: 80px;
+  border-radius: 20px;
   border-left: solid rgb(227, 160, 8);
   border-bottom: solid rgb(227, 160, 8);
   margin-top: 2em;

@@ -3,18 +3,24 @@
 import { RouterView } from 'vue-router'
 import MainPage from '@/components/MainPage.vue';
 import CustomNavbar from './components/CustomNavbar.vue';
+import CustomFooter from './components/CustomFooter.vue';
 </script>
 
 
  <template>
    <header>
-      <div class="wrapper">
+      <div class="wrapper fixed-top">
+      <!-- Insert header components here, ROUTER LINKS are in /components/CustomNavBar.vue -->
         <MainPage  />
         <CustomNavbar />
-       <!-- Insert header components here, ROUTER LINKS are in /components/CustomNavBar.vue -->
-     </div>
+      </div>
     </header>
-   <RouterView />
+      <div class="overflow-y-auto">
+        <RouterView/>
+      </div>
+    <div class="footer">
+        <CustomFooter/>
+    </div>
 </template> 
 
 
@@ -24,6 +30,7 @@ header {
   line-height: 1.5;
   max-height: 100vh;
 }
+
 
 @media (min-width: 1024px) {
   header {

@@ -1,35 +1,45 @@
 <template>
-  <div class="about">
+  <div class="flex items-center">
     <div class="container">
+      <div class="carousel container h-100">
         <fwb-carousel no-indicators :pictures="pictures" />
+      </div>
       <p class="bio">
-        I am Jesse Hudak - A curious problem solver, rabbit hole spelunker, jack-of-all with a sharp wit and a penchant for conversation. 
+        My name is Jesse Hudak, a dedicated problem solver, eager explorer of intricate challenges, and a conversationalist with a knack for engaging dialogue.
         <br class="break">
-        I am an avid learner, working into the world of tech. I have always
-        enjoyed building and repairing computers, however that was not the career path I would have chosen for fulfilling work. I wanted something with a creative outlet, rewarding, fun, challenging and something that I could do anywhere.
+        Throughout my career, I've embraced a journey of perpetual growth and exploration, particularly within the dynamic realm of technology. While my love for tinkering with computers has been a lifelong passion, I've always sought a career path that offers a mix of creativity, fulfillment, and adaptability, allowing me to thrive in diverse environments.
         <br class="break">
-        After joining the cohort through U.C Berkeley, I started to feel like this was the right path to get me to where I am going, albeit an arduous path. 
+        My decision to join a cohort program at U.C Berkeley was a turning point in my professional trajectory. Despite the inevitable hurdles, I viewed it as a pivotal step towards aligning my aspirations with tangible goals.
         <br class="break">
-        I have taken on several personal projects and I am working with some team-mates that I stuck with after the cohort was over, to work and develop some projects together. I am constantly on the lookout for open-source projects that I can contribute to, and doing drills and challenges to get my skills up.
+        In addition to formal education, I've delved into numerous personal projects and collaborative ventures with like-minded individuals, fostering an environment where innovation thrives. Continuously on the lookout for opportunities to contribute to open-source initiatives, I actively engage in challenging drills to hone my skills and keep pace with industry developments.
+        <br class="break">
+        In essence, my professional journey is defined by an unwavering commitment to excellence, driven by an insatiable thirst for knowledge and a dedication to pushing the boundaries of what's achievable.
+        <br class="break">
       </p>
       <div class="container py-4 text-left">
       <ul style="list-style-type:circle;">
-        <h3 class="hobbyheader">Random hobbies and interests / Fun</h3>
-        <li>Beach trips and tidepooling</li>
+        <h3 class="hobbyheader">Random Hobbies & Interests</h3>
+        <li>Beach trips & Tidepooling</li>
         <li>Body Surfing</li>
-        <li>Working Out/ Hiking, have lost 40lbs since last April!</li>
-        <li>Record Collecting/ Vintage Audio Gear</li>
+        <li>Working Out & Hiking, have lost 40lbs+ since last April!</li>
+        <li>Boardgames, puzzles, video games</li>
+        <li>Record Collecting & Vintage Audio Gear</li>
+        <li>Discovering new artists</li>
+        <li>Driving & Automotive Events</li>
+        <li>Live music shows</li>
+        <li>Cooking and learning new techniques or cuisune from various cultures</li>
+        <li>Seeking out eateries and restaurants</li>
+        <li>Watching cooking shows & competitions</li>
         <li>Playing Guitar</li>
         <li>Succulents</li>
-        <li>Fungus & Mycology</li>
         <li>Reading, currently on a Sci-Fi kick</li>
         <li>Spending hours on Google Maps looking at the world, finding interesting places to go or research </li>
       </ul>
       </div>
 
-      <h4>
+      <!-- <h4>
         <p>Copyright 2023 @ Jesse Hudak | Made with Vue.js/ Vite/ TailwindCSS & VSCode</p>
-      </h4>
+      </h4> -->
     </div>
   </div>
 </template>
@@ -38,7 +48,7 @@
 import { FwbCarousel } from 'flowbite-vue'
 
 const pictures = [
-  {src: 'src/assets/HeadshotCasual12142023.png', alt: 'Headshot'},
+  {src: 'src/assets/HeadshotCasual12142023.png', alt: 'Headshot', size: 'w-45',},
   {src: 'src/assets/Carweek.jpg', alt: 'Jesse at Carshow'},
   {src: 'src/assets/EscapeRoom.jpg', alt: 'Escape Room Team Photo'},
   {src: 'src/assets/BeneciaFriends.jpg', alt: 'Downtown Benecia on birthday'},
@@ -51,25 +61,35 @@ const pictures = [
 </script>
 
 <style>
+
 .bio{
   margin-top: 2em;
   font-size: medium;
   font-weight: 500;
-  background: linear-gradient(125deg, rgba(16,16,16,1) 2%, rgba(23,23,23,1) 35%, rgba(24,24,24,1) 100%);
+  background: linear-gradient(125deg, rgb(16, 16, 16) 2%, rgba(23,23,23,1) 35%, rgba(24,24,24,1) 100%);
   padding: 1em;
   border-radius: 2%;
 }
 
 .container {
-    margin-top: 2em;
-  }
+  color: white;
+  max-height: 750px; 
+  overflow-y: auto; /* Enable vertical scrolling */
+  scrollbar-width: thin; /* For Firefox */
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
 
 .break {
   margin-bottom: 1em;
 }
 
-.br{
-  padding: 1em;
+img, video {
+  object-fit: cover;
+  height: auto;
 }
 
 .portrait {
@@ -88,6 +108,9 @@ ul{
   margin-left: 2em;
 }
 
+li{
+  margin-top: .10em;
+}
 
 .hobbyheader{
  font-size: medium;
@@ -95,7 +118,7 @@ ul{
  color: rgb(227, 160, 8);
  margin-left: -1.5em;
  border-bottom: solid rgb(227, 160, 8);
-
+ margin-bottom:.25em;
 }
 
 h4{
