@@ -11,15 +11,11 @@ import ContactModal from './ContactModal.vue';
 import { FwbButton } from 'flowbite-vue'
 import { ref } from 'vue';
 
-// Define a ref to track the modal state
+// Contact Modal Script
 const isContactModalOpen = ref(false);
-
-// Function to open the ContactModal
 const openContactModal = () => {
   isContactModalOpen.value = true;
 };
-
-// Function to close the ContactModal
 const closeContactModal = () => {
   isContactModalOpen.value = false;
 };
@@ -109,12 +105,14 @@ const closeContactModal = () => {
 export default {
   methods: {
     downloadResume() {
-      const resumePath = import.meta.env.BASE_URL + 'src/assets/Resume.pdf';
-      window.open(resumePath, '_blank');
+      // Direct link to the Resume on Google Drive
+      const resumeLink = 'https://drive.google.com/file/d/1Lrb0K5mN_CPUp2JyMDL8et4-UtWvwPWL/view?usp=drive_link';
+      window.open(resumeLink, '_blank');
     },
     downloadUcbcert() {
-      const ucbcertPath = import.meta.env.BASE_URL + 'src/assets/UCBCert.pdf';
-      window.open(ucbcertPath, '_blank');
+      // Direct link to the UCB Full Stack Cert on Google Drive
+      const ucbCertLink = 'https://drive.google.com/file/d/1g9cpCORzjobqCHFcjVXqtUlti0skvfXq/view?usp=drive_link';
+      window.open(ucbCertLink, '_blank');
     },
   },
 };
@@ -123,7 +121,7 @@ export default {
 <style>
 
 .green-link {
-  color: #00a86b; /* Set your desired green color */
+  color: #00a86b;
 }
 @media (min-width: 1024px) {
   .about {
