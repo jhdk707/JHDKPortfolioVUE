@@ -1,17 +1,17 @@
 <!-- PROJECTS PAGE 11/29/2023 -->
 
 <script setup>
-//import { FwbButton, FwbButtonGroup } from 'flowbite-vue'
+
 </script>
 
 <script>
 //IMAGE IMPORTS FOR PROJECT CARDS - 11/29/2023
-import NationalParksimg from '@/assets/NTLPRKSSCREENCAP.png';
-import NoteTakerimg from '@/assets/Notetaker5000sc.png';
-import NeedleJunkeezimg from '@/assets/needlejunkeez.png';
-import WorkdaySchimg from '@/assets/workdayscheduler.png';
-import WeatherDashimg from '@/assets/weatherapp.png';
-import PasswordGenimg from '@/assets/passwrdgensc.png';
+import NationalParksimg from '@/assets/images/NTLPRKSSCREENCAP.png';
+import NoteTakerimg from '@/assets/images/Notetaker5000sc.png';
+import NeedleJunkeezimg from '@/assets/images/needlejunkeez.png';
+import WorkdaySchimg from '@/assets/images/workdayscheduler.png';
+import WeatherDashimg from '@/assets/images/weatherapp.png';
+import PasswordGenimg from '@/assets/images/passwrdgensc.png';
 
 
 
@@ -81,9 +81,8 @@ export default {
 
 <template>
   <div class="project-container">
-    <div class="projectsscrollcontainer">
-      <div v-for="project in projects" :key="project.id" class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 mx-auto mb-8">
-        <a :href="project.deployedLink">
+    <div class="projectcard">
+      <div v-for="project in projects" :key="project.id" class="max-w-sm bg-white border border-gray-200 shadow hover:shadow-lg-blue-500 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 mx-auto mb-8 hover:shadow-lg">        <a :href="project.deployedLink">
           <img class="rounded-t-lg" :src="project.image" alt="screenshot of webpage" />
         </a>
         <div class="p-5">
@@ -121,23 +120,6 @@ export default {
   display: none;
 }
 
-.card {
-  padding-bottom: 2em;
-}
-
-.card-img-top {
-  display: block;
-  margin: 5 auto 2rem;
-  border-style: groove;
-  border-color: antiquewhite;
-  width: 500px;
-  height: auto;
-}
-
-.card-title.text-center {
-  color: aliceblue;
-  font-size: large;
-}
 
 @media (min-width: 1024px) {
   .about {

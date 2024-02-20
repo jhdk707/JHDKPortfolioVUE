@@ -48,15 +48,15 @@
 import { FwbCarousel } from 'flowbite-vue'
 
 const pictures = [
-  {src: 'src/assets/HeadshotCasual12142023.png', alt: 'Headshot', size: 'w-45',},
-  {src: 'src/assets/Carweek.jpg', alt: 'Jesse at Carshow'},
-  {src: 'src/assets/EscapeRoom.jpg', alt: 'Escape Room Team Photo'},
-  {src: 'src/assets/BeneciaFriends.jpg', alt: 'Downtown Benecia on birthday'},
-  {src: 'src/assets/BabyGoat.jpg', alt: 'Jesse with baby goat'},
-  {src: 'src/assets/OaklandMetro.jpg', alt: 'Jesse with Aaron from Giant Squid'},
-  {src: 'src/assets/OroBeach.jpg', alt: 'Oro Beach Portrait'},
-  {src: 'src/assets/PossoStage.jpg', alt: 'Posso Stage band with Grandfather'},
-  {src: 'src/assets/RuthGrange.jpg', alt: 'Rutherford battle of the bands'},
+  {src: 'src/assets/images/HeadshotCasual12142023.png', alt: 'Headshot'},
+  {src: 'src/assets/images/Carweek.jpg', alt: 'Jesse at Carshow'},
+  {src: 'src/assets/images/EscapeRoom.jpg', alt: 'Escape Room Team Photo'},
+  {src: 'src/assets/images/BeneciaFriends.jpg', alt: 'Downtown Benecia on birthday'},
+  {src: 'src/assets/images/BabyGoat.jpg', alt: 'Jesse with baby goat'},
+  {src: 'src/assets/images/OaklandMetro.jpg', alt: 'Jesse with Aaron from Giant Squid'},
+  {src: 'src/assets/images/OroBeach.jpg', alt: 'Oro Beach Portrait'},
+  {src: 'src/assets/images/PossoStage.jpg', alt: 'Posso Stage band with Grandfather'},
+  {src: 'src/assets/images/RuthGrange.jpg', alt: 'Rutherford battle of the bands'},
 ]
 </script>
 

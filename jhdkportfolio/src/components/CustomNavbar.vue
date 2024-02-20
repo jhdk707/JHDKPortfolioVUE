@@ -32,8 +32,8 @@ const isActive = (routePath) => {
 
 <style scoped>
 nav {
-  display: flex;
-  justify-content: space-around;
+  /* display: flex; */
+  /* justify-content: space-around; */
   align-items: center;
   color: #00a86b;
   text-shadow: 1px 1px 3px black;
@@ -41,7 +41,7 @@ nav {
   border-radius: 20px;
   border-left: solid rgb(227, 160, 8);
   border-bottom: solid rgb(227, 160, 8);
-  margin-top: 2em;
+  /* margin-top: 2em; */
   width: 100%;
 }  
 
